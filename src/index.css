@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 #root {
-    @apply flex justify-center my-14;
+    @apply flex justify-center my-14 px-9;
 }
 
 .card {
-    @apply px-3 py-7 bg-white rounded-lg;
+    @apply p-7 bg-white rounded-lg w-screen max-w-[450px];
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
