@@ -1,7 +1,15 @@
+import { useState } from 'react'
+import List from './components/List'
+import data from '../data'
+
 function App() {
+  const [people, setPeople] = useState(data)
 
   return (
-    <p className="text-lg">Greeting - Hello, World!</p>
+    <div className="card">
+      <h2>{people.length}</h2>
+      <List data={people} />
+    </div>
   )
 }
 
